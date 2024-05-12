@@ -1,0 +1,334 @@
+/*=========== Globle =========== */
+@font-face {
+  font-family: "fontAddres";
+  src: url(../webfonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "fontAll";
+  src: url(../webfonts/Poppins-Regular.ttf);
+}
+
+body {
+  font-family: "fontAll";
+  font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "fontAddres";
+  font-size: 50px;
+}
+
+.bg-globale {
+  background-color: #f7f7f7;
+}
+
+.w-70 {
+  max-width: 80%;
+  margin: auto;
+}
+/*=========== header =========== */
+
+nav li {
+  position: relative;
+  transition: all 1s;
+}
+nav .nav-link::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.4s;
+}
+
+nav li .nav-link.active::after {
+  content: "";
+  width: 90%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 3px;
+}
+
+nav a {
+  color: rgb(0, 0, 0) !important;
+}
+header nav {
+  background-color: #ffffffec !important;
+}
+
+.bg-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../imgs/bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+header .caption span,
+header .caption h1 {
+  font-size: 65px;
+}
+
+/*=========== about =========== */
+.bg-caver {
+  border: 2px solid #e9e9e9;
+  background-color: #f4f4f4;
+}
+.w-95 {
+  width: 95%;
+}
+.w-80 {
+  width: 80%;
+}
+.w-90 {
+  width: 90%;
+}
+
+section.About button:hover {
+  transition: all 0.5s;
+  background-color: black !important;
+  color: white;
+}
+section.About button.down:hover {
+  transition: all 0.5s;
+  background-color: white !important;
+  color: black !important;
+}
+
+section.About figure img {
+  position: relative;
+  z-index: 2;
+}
+section.About figure .dot {
+  position: absolute;
+  width: 70%;
+  height: 80%;
+  top: 27%;
+  left: 3%;
+  background-image: url(../imgs/dots.png);
+  z-index: 1;
+}
+
+/*=========== services =========== */
+
+section.services .conint-card i {
+  transition: all 0.3s ease-in-out;
+}
+section.services .conint-card:hover i {
+  background-color: black !important;
+  color: white;
+}
+
+section.services article {
+  position: relative;
+}
+section.services article h2 {
+  z-index: 2;
+}
+section.services article .bg-img {
+  position: absolute;
+  width: 15%;
+  height: 80%;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%);
+  background-image: url(../imgs/dots.png);
+}
+
+/*=========== Portfolio =========== */
+section.porfolio figure .layer {
+  position: absolute;
+  background-color: rgb(255, 254, 254);
+  top: 10%;
+  left: 4%;
+  right: 4%;
+  height: 96%;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+section.porfolio figure:hover .layer {
+  opacity: 0.9;
+  top: 2%;
+}
+
+section.porfolio figure .layer i {
+  transition: all 0.4s ease-in;
+}
+section.porfolio figure .layer i:hover {
+  background-color: white !important;
+  color: black !important;
+  border: solid black;
+}
+
+section.porfolio article {
+  position: relative;
+}
+section.porfolio article h2 {
+  z-index: 2;
+}
+section.porfolio article .bg-img {
+  position: absolute;
+  width: 15%;
+  height: 70%;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%);
+  background-image: url(../imgs/dots.png);
+}
+
+section.porfolio .nav-tabs button {
+  position: relative;
+}
+section.porfolio .nav-tabs button::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background-color: #00000ab3;
+  left: 5%;
+  top: 100%;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+section.porfolio .nav-tabs button.active::after {
+  width: 90%;
+}
+
+/*=========== Testimonials =========== */
+section.testmonials img {
+  width: 110px !important;
+  height: 110px;
+}
+
+section.testmonials button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  margin: 5px !important ;
+  background-color: #869791 !important;
+}
+
+section.testmonials article {
+  position: relative;
+}
+section.testmonials article h2 {
+  z-index: 2;
+  position: relative;
+}
+section.testmonials article .bg-img {
+  position: absolute;
+  width: 15%;
+  height: 70%;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%);
+  background-image: url(../imgs/dots.png);
+}
+
+/*=========== Our Team =========== */
+
+section.our-team article.art-img {
+  background-color: #5b5b5b !important;
+}
+section.our-team figure .layer {
+  position: absolute;
+  background-color: rgb(255, 254, 254);
+  top: 2%;
+  left: 2%;
+  right: 2%;
+  height: 96%;
+  opacity: 0;
+  transition: all 0.5s;
+  transform: scale(0.4);
+}
+
+section.our-team .contint-body:hover .layer {
+  transform: scaleX(-100%);
+  opacity: 0.9 !important;
+}
+
+section.our-team figure img {
+  transition: all 0.3s;
+}
+
+section.our-team .layer i {
+  transform: scaleX(-100%);
+}
+section.our-team .layer i:hover {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid;
+}
+
+section.our-team .for-hover:hover img {
+  transform: scale(1.2);
+}
+
+section.our-team article {
+  position: relative;
+}
+section.our-team article h2 {
+  z-index: 2;
+  position: relative;
+}
+section.our-team article .bg-img {
+  position: absolute;
+  width: 15%;
+  height: 40%;
+  left: 50%;
+  top: 35%;
+  transform: translateX(-50%);
+  background-image: url(../imgs/dots.png);
+}
+
+/*=========== contact =========== */
+
+section.contact i {
+  background-color: #f4f4f4 !important;
+  transition: all 0.5s;
+}
+
+section.contact .contint-card:hover i {
+  background-color: black !important;
+  color: white !important;
+}
+
+section.contact form button:hover {
+  transition: all 0.4s;
+  background-color: white !important;
+  color: black !important;
+}
+
+section.contact article {
+  position: relative;
+}
+section.contact article h2 {
+  z-index: 2;
+  position: relative;
+}
+section.contact article .bg-img {
+  position: absolute;
+  width: 15%;
+  height: 40%;
+  left: 50%;
+  top: 35%;
+  transform: translateX(-50%);
+  background-image: url(../imgs/dots.png);
+}
+
+/* media overide */
+@media (min-width: 1200px) {
+  .p-section {
+    padding-left: 100px !important;
+    padding-right: 100px !important ;
+  }
+}
